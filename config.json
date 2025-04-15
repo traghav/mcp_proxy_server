@@ -1,0 +1,16 @@
+{
+    "backend_servers": {
+      "filesystem": {
+        "type": "stdio",
+        "command": "npx",
+        "args": ["-y", "@modelcontextprotocol/server-filesystem", "/Users/raghav/dev/personal/mcp/proxy_server"]
+      
+      },
+      "git": {
+        "type": "stdio",
+        "command": "uvx",
+        "args": ["mcp-server-git", "--repository", "https://github.com/modelcontextprotocol/modelcontextprotocol/tree/main/docs"]
+      }
+     
+  }
+}
